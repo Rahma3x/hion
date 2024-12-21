@@ -10,6 +10,8 @@ jobs:
         # - uses: actions/checkout@v3
         - name: "ls"
           run: echo rahma
+        - name: "all contant"
+          run: ls   
 
         # - name: "Login"
         #   run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_TOKEN}}  
