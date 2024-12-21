@@ -6,17 +6,15 @@ jobs:
    build:
      runs-on: ubuntu-latest
 
-     steps:
-        - name: "all contant"
-          run: ls   
+     steps: 
         - uses: actions/checkout@v3
         - name: "ls"
           run: echo rahma
         - name: "all contant"
           run: ls   
 
-        # - name: "Login"
-        #   run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_TOKEN}}  
+        - name: "Login"
+          run: docker login --username ${{ secrets.DOC_US }} --password ${{ secrets.DOC_TOKK }}  
         
         # - name: "Buliding image"
         #   run: docker bulid -t ${{ secrets.DOCKER_USERNAME }}/myimage .
